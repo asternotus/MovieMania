@@ -11,6 +11,7 @@ public class Rate
     private int touchEffect;
     private int montage;
     private int soundtrack;
+    private int sumOfAllRates;
 
 
     public int getPlot() {
@@ -60,4 +61,10 @@ public class Rate
     public void setSoundtrack(int soundtrack) {
         this.soundtrack = soundtrack;
     }
+
+    public int getSumOfAllRates(){
+        sumOfAllRates = acting + plot + specialEffects + touchEffect + montage + soundtrack;
+        return sumOfAllRates;
+    }
+
 }
